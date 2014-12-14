@@ -16,7 +16,7 @@ def runAndBeamLog(logName, command, cwd=None):
             command, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
             stdin=devNull, close_fds=True)
     outputLines = []
-    TIMEOUT = 5 * 60
+    TIMEOUT = 10 * 60
     OVERALL_TIMEOUT = 4 * 60 * 60
     before = time.time()
     while True:
